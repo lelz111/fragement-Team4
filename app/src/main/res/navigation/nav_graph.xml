@@ -42,4 +42,5 @@
         android:id="@+id/aboutFragment"
         android:name="com.example.profilpenggunaedit.ui.theme.about.AboutFragment"
         android:label="Tentang Aplikasi" />
+
 </navigation>
