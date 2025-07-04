@@ -69,14 +69,16 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- TOMBOL -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_edit_name"
             style="@style/Widget.Material3.Button"
             android:text="Edit Nama"
             android:layout_marginTop="24dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_edit"
+            app:iconPadding="8dp"
+            app:iconGravity="textStart" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_edit_desc"
@@ -84,16 +86,21 @@
             android:text="Edit Deskripsi"
             android:layout_marginTop="12dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_edit_note"
+            app:iconPadding="8dp"
+            app:iconGravity="textStart" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_about"
+            style="@style/Widget.Material3.Button.OutlinedButton"
             android:text="Tentang Aplikasi"
             android:layout_marginTop="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/primary"
-            android:textColor="@color/onPrimary" />
-
+            android:textColor="@color/primary"
+            app:icon="@drawable/ic_info"
+            app:iconPadding="8dp"
+            app:iconGravity="textStart" />
     </LinearLayout>
 </ScrollView>
