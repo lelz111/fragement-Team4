@@ -55,10 +55,7 @@ class MainActivity : AppCompatActivity() {
         navigationView.setNavigationItemSelectedListener { menuItem ->
             val handled = when (menuItem.itemId) {
                 R.id.logout -> {
-                    // Hapus data di ViewModel
                     profileViewModel.clearData()
-
-                    // Navigasi ke login dan bersihkan backstack
                     val options = navOptions {
                         popUpTo(R.id.nav_graph) {
                             inclusive = true
