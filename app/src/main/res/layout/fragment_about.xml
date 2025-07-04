@@ -1,0 +1,30 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Tentang Aplikasi"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:text="Aplikasi ini merupakan latihan Fragment berbasis Material Design 3 yang ditujukan untuk mengelola data profil pengguna dengan tampilan modern dan interaktif."
+            android:layout_marginTop="12dp"
+            android:textColor="@color/onSurface"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Profil Pengguna + Edit</string>
+    <string name="app_name">ProfilPenggunaEdit</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="masuk">Masuk</string>
+    <string name="edit_nama">Edit Nama</string>
+    <string name="edit_desc">Edit Deskripsi</string>
+    <string name="simpan_nama">Simpan Nama</string>
+    <string name="simpan_desc">Simpan Deskripsi</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="deskripsi_aplikasi">Aplikasi ini dibuat untuk latihan navigasi dan komunikasi antar fragment di Android.</string>
+    <string name="profil_icon">Ikon Profil</string>
 </resources>

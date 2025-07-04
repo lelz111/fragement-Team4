@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.theme.profile.ProfileFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- ICON PROFIL -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_account_circle"
+            android:contentDescription="@string/profil_icon"
+            android:tint="@color/primary"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- SAPAAN -->
+        <TextView
+            android:id="@+id/tv_greeting"
+            android:text="Halo, -"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/onPrimaryContainer"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- KARTU PROFIL -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/primary">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:text="Nama: -"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/onSurface"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:text="Deskripsi: -"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondary"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- TOMBOL -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_edit_name"
+            style="@style/Widget.Material3.Button"
+            android:text="Edit Nama"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_edit_desc"
+            style="@style/Widget.Material3.Button"
+            android:text="Edit Deskripsi"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_about"
+            android:text="Tentang Aplikasi"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/onPrimary" />
+
+    </LinearLayout>
+</ScrollView>
